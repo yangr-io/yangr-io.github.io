@@ -152,63 +152,31 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-20210612" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Note-20210612" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/26/Note-20210612/">Note-20210612</a>
+    </h1>
+  
+
+        
+        <a href="/2021/06/26/Note-20210612/" class="archive-article-date">
+  	<time datetime="2021-06-26T08:24:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-26</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="2021-6-12-日志"><a href="#2021-6-12-日志" class="headerlink" title="2021/6/12 日志"></a>2021/6/12 日志</h1><hr>
-<p>[toc]</p>
-<div STYLE="page-break-after: always;"></div>
-
-<h2 id="【学习时间】"><a href="#【学习时间】" class="headerlink" title="【学习时间】"></a>【学习时间】</h2><h3 id="1-MarkDown语法学习"><a href="#1-MarkDown语法学习" class="headerlink" title="1. MarkDown语法学习"></a>1. MarkDown语法学习</h3><ul>
-<li><p><strong>MarkDown中实现空格效果</strong></p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 可以在需要添加空格的地方使用如下命令（注意最后的分号）</span><br><span class="line">&amp;emsp; // 半角空格（英文）</span><br><span class="line">&amp;nbsp; // 全角空格（中文）</span><br><span class="line">$~~~~$</span><br></pre></td></tr></table></figure>
-<br></li>
-<li><p><strong>MarkDown中实现空行效果</strong></p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 在需要加入空行的地方使用如下命令</span><br><span class="line">&lt;br&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<br>
-
-<ul>
-<li><p><strong>MarkDown导出PDF时产生分页效果</strong></p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 在需要加入分页符的地方使用如下命令</span><br><span class="line">&lt;div STYLE=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="【个人时间】"><a href="#【个人时间】" class="headerlink" title="【个人时间】"></a>【个人时间】</h2><h3 id="1-配置各种编译环境"><a href="#1-配置各种编译环境" class="headerlink" title="1. 配置各种编译环境"></a>1. 配置各种编译环境</h3><ul>
-<li><strong>VSC配置Python运行环境</strong>   从<a target="_blank" rel="noopener" href="https://www.python.org/">Python官网</a>下载最新版本<em>python-3.9.5-amd64.exe</em>进行安装。在vsc的扩展中搜索插件Python，然后安装。新建HelloPython.py文件并编译python代码，运行成功。</li>
-</ul>
-<br>
-
-<ul>
-<li><strong>VSC配置C/C++运行环境</strong>   参考博客内容：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lkpp/p/vscode-cpp.html">传送门</a></li>
-</ul>
-<br>
-
-<ul>
-<li><p><strong>Git的安装与使用</strong>   之前参考的是这篇博客的内容进行操作的：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012615705/article/details/78601295?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-2.control">传送门</a>。但是好像没有设置SSH keys啊，怎么就可以直接提交修改内容了呢，什么情况？我就执行了如下一些操作</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 在Git工作路径（D:\User\Tools Install\Git\workplace）下打开Git Bash</span><br><span class="line"></span><br><span class="line"># 创建Blog文件夹，并进入文件夹</span><br><span class="line">mkdir Blog</span><br><span class="line">cd Blog</span><br><span class="line"></span><br><span class="line"># 初始化git</span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"># 克隆远程仓库到本地，仓库地址从GitHub里创建的仓库中获取</span><br><span class="line">git clone https://github.com/yangr-io/Blog.git</span><br><span class="line"></span><br><span class="line"># 成功后，执行ls命令看到生成一个仓库文件夹（Blog），进入文件再次执行ls命令，看到远程仓库的文件都下载到本地了</span><br><span class="line"></span><br><span class="line"># 创建一个20210612.md文件，并编译文件内容</span><br><span class="line"></span><br><span class="line"># 查看修改内容</span><br><span class="line">git status -s .</span><br><span class="line"></span><br><span class="line"># 添加待提交的文件</span><br><span class="line">git add 20210612.md</span><br><span class="line"></span><br><span class="line"># 提交</span><br><span class="line">git commit -m &quot;Add file 20210612.md&quot;</span><br><span class="line"></span><br><span class="line"># push到远程</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<p>  &emsp;网上搜索了一个github的SSH Keys是用来干嘛的，以及怎么进行配置：<a target="_blank" rel="noopener" href="https://blog.csdn.net/love_fdu_llp/article/details/38752365">传送门</a>。简单说，当我们每次push提交到远程的时候都会提示输入github的账号和密码，这让我们很头痛，因为git使用https协议，安全传输，使用SSH Keys的好处就是不用每次输入账号和密码。</p>
-  <br>
-
-<p>  &emsp;之前碰到每次输入账号和密码的时候，网上搜索的解决办法不是使用SSH Keys，而是这篇博客内容：<a target="_blank" rel="noopener" href="https://blog.csdn.net/xiecheng1995/article/details/107226818/">传送门</a>。原理好像是我们输入一次账号和密码之后git把它们记录了下来，然后每次提交的时候就从记录中获取信息。</p>
-  <br>
-
-<p>  &emsp;测试了一下，使用第二种方法的缺点是：新建一个仓库，还得在仓库下再执行一次操作；或者删除这个仓库之后，重新再下载下来也得重新执行对应的操作。<br>  好像这个缺点是可以解决的就是在使用命令的时候设置为<code>--global</code>，即设置成全局的。</p>
-  <br>
-
-<p>  由于第二种方法的缺点，让我去尝试一下第一种方法，具体操作如下：</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"># 在Git的workplace目录下打开Git Bash</span><br><span class="line"></span><br><span class="line"># 本地生成密钥，这里我之前已经通过git config命令设置了user.name和user.email了，所以下面是配置的邮箱</span><br><span class="line">ssh-keygen -t rsa -C &quot;198xxxxxxx@qq.com&quot;</span><br><span class="line"></span><br><span class="line"># 上面命令执行之后，然后一直回车直到结束。然后你的个人账户目录下会生成一个.ssh文件夹（C:\Users\yangrui\.ssh，我也不清楚为什么会给我生成到C盘下面去了）</span><br><span class="line"></span><br><span class="line"># 添加公钥到github上，用记事本打开.ssh/id_rsa.pub文件并将内容复制粘贴到github账户的Setting》SSH and GPG keys》SSH keys中</span><br><span class="line"></span><br><span class="line"># 测试key是否可用</span><br><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line"># 命令执行后会让你输入yes，输入并回车之后，出现下面提示表示成功</span><br><span class="line">Hi yangr-io! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line"></span><br><span class="line"># 我们再来试试提交代码是否需要输入账号和密码，我以为可以了，没想到我还是太天真，还是要输入账号和密码，这让我情何以堪，继续查看博客内容，发现还有内容没有弄完。</span><br><span class="line"></span><br><span class="line"># 修改本地的ssh remote url.不用https协议，改用git协议</span><br><span class="line"># 使用 git remote -v查看当前的remote url</span><br><span class="line">$ git remote -v</span><br><span class="line">origin  https://github.com/yangr-io/Blog.git (fetch)</span><br><span class="line">origin  https://github.com/yangr-io/Blog.git (push)</span><br><span class="line"></span><br><span class="line"># 在github仓库中查看ssh地址</span><br><span class="line">git@github.com:yangr-io/Blog.git</span><br><span class="line"></span><br><span class="line"># 设置ssh remote url</span><br><span class="line">git remote set-url origin git@github.com:yangr-io/Blog.git</span><br><span class="line"></span><br><span class="line"># 再次查看ssh remote url</span><br><span class="line">$ git remote -v</span><br><span class="line">origin  git@github.com:yangr-io/Blog.git (fetch)</span><br><span class="line">origin  git@github.com:yangr-io/Blog.git (push)</span><br><span class="line"></span><br><span class="line"># 再次提交代码不需要再输入账号和密码了</span><br></pre></td></tr></table></figure>
-
-  <br>
-
-<p>  下面是之前配置用户名和邮箱的命令</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 配置git user name &amp; email</span><br><span class="line">git config --global user.name &quot;yangr-io&quot;</span><br><span class="line">git config --global user.email &quot;198xxxxxxx@qq.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="2-其他"><a href="#2-其他" class="headerlink" title="2. 其他"></a>2. 其他</h3><ul>
-<li>吐槽一下，国内访问github网速是真的差，时不时还访问不了。迟早得换Gitee。</li>
-</ul>
-
+<p>摘要：本文介绍了MarkDown语法学习、电脑上配置各种编译环境和其它一些内容。</p>
+        
+          <a class="article-more-a" href="/2021/06/26/Note-20210612/#more">more >></a>
+        
       
 
       
@@ -220,7 +188,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/06/12/20210612/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/06/26/Note-20210612/">展开全文 >></a>
         </p>
       
 
@@ -271,18 +239,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="2021-6-10-日志"><a href="#2021-6-10-日志" class="headerlink" title="2021/6/10 日志"></a>2021/6/10 日志</h1><hr>
-<p>[toc]</p>
-<div STYLE="page-break-after: always;"></div>
-
-<h2 id="【工作时间】"><a href="#【工作时间】" class="headerlink" title="【工作时间】"></a>【工作时间】</h2><h3 id="1-x-x-x"><a href="#1-x-x-x" class="headerlink" title="1. x x x"></a>1. x x x</h3><p>xxxxxxxxxxx</p>
-<h3 id="2-xx-xx-xx"><a href="#2-xx-xx-xx" class="headerlink" title="2. xx xx xx"></a>2. xx xx xx</h3><p>xxxxxxxx</p>
-<h3 id="3-xxx-xxx-xxx"><a href="#3-xxx-xxx-xxx" class="headerlink" title="3. xxx xxx xxx"></a>3. xxx xxx xxx</h3><p>xxxxxxxxxx</p>
-<h2 id="【学习时间】"><a href="#【学习时间】" class="headerlink" title="【学习时间】"></a>【学习时间】</h2><h3 id="1-使用Gitee-Pages和Hexo搭建个人博客"><a href="#1-使用Gitee-Pages和Hexo搭建个人博客" class="headerlink" title="1. 使用Gitee Pages和Hexo搭建个人博客"></a>1. 使用Gitee Pages和Hexo搭建个人博客</h3><p><a target="_blank" rel="noopener" href="https://blog.wanvale.com/archives/164/">参考文章</a></p>
-<h3 id="2-Markdown转pdf时分页"><a href="#2-Markdown转pdf时分页" class="headerlink" title="2. Markdown转pdf时分页"></a>2. Markdown转pdf时分页</h3><p>使用如下HTML代码让Markdown文档分页。<br><code>&lt;div STYLE=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;</code></p>
-<h2 id="【个人时间】"><a href="#【个人时间】" class="headerlink" title="【个人时间】"></a>【个人时间】</h2><blockquote>
-<p>城南小陌又逢春，只见梅花不见人。人有生老三千疾，唯有相思不可医。————《十二月二日夜游沈氏园亭》陆游</p>
-</blockquote>
-
+<p>Markdown 编写博客示例</p>
+        
+          <a class="article-more-a" href="/2021/06/10/yang-rui/#more">more >></a>
+        
       
 
       
@@ -345,19 +305,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        
+          <a class="article-more-a" href="/2021/06/10/hello-world/#more">more >></a>
+        
       
 
       
